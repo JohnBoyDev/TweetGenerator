@@ -5,14 +5,14 @@
 	</head>
 	<body>
 		<!-- Content -->
-		<h4>What mood are you in?</h4>
-		<form>
-			<input type="radio" name="Mood" id="Happy" value="Happy" checked>Happy<br>
-			<input type="radio" name="Mood" id="Sad" value="Sad">Sad<br>
-			<input type="radio" name="Mood" id="Angry" value="Angry">Angry
+		<h4>Choose One</h4>
+		<form style="width: 25%;" id="TweetForm">
+			<input type="radio" name="Type" id="Random">Random<br>
+			<input type="radio" name="Type" id="Custom">Custom<br>
+			<textarea name="textarea" name="Custom" id="CustomText" cols="35" rows="5"></textarea><br><br>
+			<input type="button" name="Type" id="SubmitButton" value="Submit" onclick="WhatsChecked()"><br><br>
 		</form><br>
 		<!-- JavaScript -->
-		<button onclick="Check()">Alert.js</button>
 		<script type="text/javascript" src="tweet.js"></script>
 	</body>
 </html>
